@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a009e1e2e4f4cee3ce1d50578d8e9227",
+    "content-hash": "8b9f420b1beef64f8ace0048fa5b4321",
     "packages": [
         {
             "name": "brick/math",
@@ -5140,6 +5140,73 @@
             "time": "2018-12-13T10:34:14+00:00"
         },
         {
+            "name": "classpreloader/classpreloader",
+            "version": "4.1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ClassPreloader/ClassPreloader.git",
+                "reference": "499c3a4f40408642e77491ba2cd695171e640684"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ClassPreloader/ClassPreloader/zipball/499c3a4f40408642e77491ba2cd695171e640684",
+                "reference": "499c3a4f40408642e77491ba2cd695171e640684",
+                "shasum": ""
+            },
+            "require": {
+                "ext-tokenizer": "*",
+                "nikic/php-parser": "^4.10.3",
+                "php": "^7.0.8 || ^8.0"
+            },
+            "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.4.1",
+                "graham-campbell/analyzer": "^2.4.3 || ^3.0.4",
+                "phpunit/phpunit": "^6.5.14 || ^7.5.20 || ^8.5.13"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "ClassPreloader\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Michael Dowling",
+                    "email": "mtdowling@gmail.com"
+                },
+                {
+                    "name": "Graham Campbell",
+                    "email": "graham@alt-three.com"
+                }
+            ],
+            "description": "Helps class loading performance by generating a single PHP file containing all of the autoloaded files for a specific use case",
+            "keywords": [
+                "autoload",
+                "class",
+                "preload",
+                "preloader"
+            ],
+            "support": {
+                "issues": "https://github.com/ClassPreloader/ClassPreloader/issues",
+                "source": "https://github.com/ClassPreloader/ClassPreloader/tree/4.1.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/GrahamCampbell",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/classpreloader/classpreloader",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2020-12-31T16:59:25+00:00"
+        },
+        {
             "name": "composer/ca-bundle",
             "version": "1.2.9",
             "source": {
@@ -6070,6 +6137,54 @@
                 "source": "https://github.com/FakerPHP/Faker/tree/v1.13.0"
             },
             "time": "2020-12-18T16:50:48+00:00"
+        },
+        {
+            "name": "flipbox/lumen-generator",
+            "version": "8.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/flipboxstudio/lumen-generator.git",
+                "reference": "831485667a2abd8bd73eb50e1145fd0d204285ba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/flipboxstudio/lumen-generator/zipball/831485667a2abd8bd73eb50e1145fd0d204285ba",
+                "reference": "831485667a2abd8bd73eb50e1145fd0d204285ba",
+                "shasum": ""
+            },
+            "require": {
+                "classpreloader/classpreloader": "^3.0|^4.0",
+                "illuminate/console": "^5.5|^6.0|^7.0|^8.0|^8.17",
+                "illuminate/filesystem": "^5.5|^6.0|^7.0|^8.0|^8.17",
+                "illuminate/support": "^5.5|^6.0|^7.0|^8.0|^8.17",
+                "psy/psysh": "0.9.*|0.10.*",
+                "symfony/var-dumper": "^4.2|^4.3|^5.0|^5.1|^5.2"
+            },
+            "suggest": {
+                "anik/form-request": "Required to use form request in Lumen."
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Flipbox\\LumenGenerator\\": "src/LumenGenerator/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Krisan Alfa Timur",
+                    "email": "krisan47@gmail.com"
+                }
+            ],
+            "description": "A Lumen Generator You Are Missing",
+            "support": {
+                "issues": "https://github.com/flipboxstudio/lumen-generator/issues",
+                "source": "https://github.com/flipboxstudio/lumen-generator/tree/8.2.0"
+            },
+            "time": "2020-12-14T16:22:20+00:00"
         },
         {
             "name": "hamcrest/hamcrest-php",
